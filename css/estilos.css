@@ -20,6 +20,12 @@ header ul {
     
 }
 
+header .open, 
+header .close {
+    display: none;
+}
+
+
 header ul li {
     display: inline-block;
     padding: 20px 5px 20px 20px ;
@@ -30,32 +36,30 @@ header nav ul li a {
     font-weight: 700;
     text-decoration: none;
     color: #333333;
-    background: #bdbf7a;
     cursor: pointer;
-    display: block;
-    padding: 5px;
-    border-radius: 5px;
-    
-    
+    display: inline block;
+    padding: 0rem 1.5rem;
+    margin-right: 50px;
+    border-radius: 5px;  
 
 }
 
- header nav ul li a:active {
-     color:#649d66;
+ header nav ul li a:hover{
+     color:rgb(137, 170, 75);
+
 
  }
 
-.logo{
-    position: relative;
-    left: 5em;top: 1em;
-    width: 50%;
-    margin: 10em;
+
+
+.fondomenu{
+   background-color:rgba(185, 183, 183, 0.4);
+  
+    
 }
-
-
 .iconosfooter{
     position: static;
-    left: 20px;
+    left: 10px;
     padding: 10px;
     background-color: #6c757d;
     
@@ -94,13 +98,24 @@ h1 {
     
  }
 .recorrido {
-    background-image: url(../imagenes/motor1.jpg);
+    background-image: url(../imagenes/imagencontact.jpg);
     background-size: cover;
     height: 80vh;
     padding: 50px 100px 120px 550px;
-    background-position: center right;
+    background-position: bottom right;
 
 }
+
+.logo {
+    width: 2rem;
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    
+  }
+
+
 
 .alimento1 {
     background-image: url(../imagenes/aventura.png);
@@ -133,8 +148,6 @@ h1 {
 h2 { color: black;
     
 }
-
-
 
 h3 { 
     color: black;
@@ -178,9 +191,11 @@ h4 {
     .imagen_index { 
         height: 500px;
         width: 375px;
-
-        padding: 10px 10px 10px 10px;
-
+        
+        margin-bottom: 0.5rem;
+        margin-left: 12.5rem;
+        padding-top: 2.2rem;
+        padding-bottom: 1.2rem;
     }
 
     .imagen_motor { 
@@ -213,8 +228,66 @@ h4 {
     }
     
 
+
+/* INDEX */
+
+.titulo2 {
+    font-size: 3.5rem;
+    letter-spacing: 4px;
+    line-height: 1.5;
+    border-right: solid 5px rgb(137, 170, 75);
+    width: 46%;
+    display: inline-block;
+    margin-bottom: 5rem;
+    margin-left: 3rem;
+    padding-top: 2.2rem;
+    padding-bottom: 1.2rem;
+  }
+  
+  
+  .icono1 {
+    list-style-image: url(../imagenes/iconomundo.png);
+  }
+  
+  .icono2 {
+    list-style-image: url(../imagenes/iconoargentina.png);
+  }
+
+  .icono3{
+    list-style-image: url(../imagenes/iconomotorhome.png);
+  }
+
+  .icono4{
+    list-style-image: url(../imagenes/iconomate.png);
+  }
+
+  .icono5{
+    list-style-image: url(../imagenes/iconomapa.png);
+  }
+
+
+  .parrafosindex {
+    display: inline-block;
+    width: 45%;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-top: 5rem;
+    margin-left: 2.8rem;
+    padding-top: 2rem;
+    
+  }
+
+
     
     /* DESTINOS */
+
+    
+    .textociudades{
+        font-size: 14px;
+        justify-content: space-around;
+        line-height: 15pt;
+    
+    }
 
     .ciudad {
         margin: 5px;
@@ -293,12 +366,19 @@ h4 {
 
 .alimento {
     color: #f2f2f2;
-    font-size: 50px;
+    font-size: 2rem;
     font-style: italic;
     letter-spacing: 5px;
     text-align: center;
-    padding: 20px;
     background-color: #8e8b82;
+    padding: 4rem 4rem;
+    border-radius: 40px;
+    line-height: 2.7;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
 }
 .alimento2 {
 
@@ -308,8 +388,25 @@ h4 {
     text-transform: uppercase;
     letter-spacing: 10px;
     background-color: #8e8b82;
+    border-radius: 50px;
+    line-height: 2.7;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     
 
+}
+
+.alimento3{
+    border-radius: 50px;
+    line-height: 2.7;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+    
 }
     /* MOTORHOME */
     
@@ -325,6 +422,79 @@ h4 {
     .imag_box {
         width: 60.3%;
         margin: 10em;
+    }
+
+
+    .mh {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: flex;
+        flex-direction: row-reverse;
+      }
+      
+      .titulomotor {
+        font-size: 3.6rem;
+        font-family: "Anton", sans-serif;
+        letter-spacing: 4px;
+        line-height: 1.2;
+        color: rgb(137, 170, 75);
+        width: 50%;
+        position: relative;
+        border-left: solid 3px rgb(137, 170, 75);
+        padding-left: 3rem;
+        margin-right: 4rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+      }
+      
+      .parrafomotor{
+        width: 48%;
+        line-height: 2.7;
+        padding-right: 2rem;
+        margin-top: 4em;
+        margin-left: 2rem;
+      }
+
+
+
+
+      .container {
+        display: flex;
+        width: 100%;
+        padding: 4% 2%;
+        box-sizing: border-box;
+        height: 100%;
+    
+    }
+    
+    .box {
+        flex: 1;
+        overflow: hidden;
+        margin: 8px;
+        line-height: 0;
+        box-shadow: #333333;
+        transition: all 300ms;
+       
+    
+    }
+    
+    .box > img {
+        
+        width: 200%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 300ms;
+    }
+    
+    .box:hover  {
+        flex: 50%;
+    }
+    
+    .box:hover > img {
+        width: 100%;
+        height: 100%; 
     }
 
     /* COMIDAS */
@@ -349,6 +519,20 @@ h4 {
     border-radius: 10px;
     }
 
+    .grid-items{
+        position: relative;
+    }
+    
+    .galeriatitulo{
+        position: absolute;
+        bottom: 0;
+        color: white;
+        background: linear-gradient(rgba(255,255,255,0.4),rgba(0,0,0,1) );
+        width: 88%;
+        margin: 0;
+        padding: 10px;
+    
+    }
 
     /* CONTACTO */ 
 
@@ -362,28 +546,41 @@ h4 {
     }
 
 .informe{
-    padding: 48px 0;
+    padding: 30px 0;
+    display: flex;
+    
 }   
 .informe .infor {
     
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width:  40%;
+    width:  35%;
+    padding: 20px;
 } 
 
+.infor {
+    color: seashell;
+   
+}
+
 form   {
-    width: 65%;
+    width: 40%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+   justify-content: space-between;
+  background: rgba(0,0,0,0.4);
+  padding:30px;
+  border-radius: 20px;
+  box-sizing: border-box;
    
 }
 
 form input {
-    width:  48%;
+    width:  100%;
     padding: 10px;
     margin-bottom: 12px;
+
 }
 
 form textarea {
@@ -391,11 +588,12 @@ form textarea {
     margin-bottom: 12px;
     padding: 10px;
     resize: none;
+    
 }
 
 .btn {
     border:none ;
-    background: #6c757d;
+    background: #8e8b82;
     color: #f2f2f2;
     padding: 10px 20px;
     width: auto;
@@ -405,42 +603,240 @@ form textarea {
 
 }
 
-
-
-/* MOTORHOME */
-
-.container {
-    display: flex;
-    width: 100%;
-    padding: 4% 2%;
-    box-sizing: border-box;
-    height: 100%;
-}
-
-.box {
-    flex: 1;
-    overflow: hidden;
-    margin: 8px;
-    line-height: 0;
-    box-shadow: #333333;
-    transition: all 300ms;
-
+.fondocontacto{
+    background-image: url(../imagenes/imagencontacto.jpg);
+    background-position: bottom;
+    height: 100vh;
+    background-attachment: fixed;
 
 }
 
-.box > img {
+.titulocontacto{
+    color: seashell;
+    padding: 30px;
+    text-align: left;
+    font-size: 4rem;
+    letter-spacing: 4px;
     
-    width: 200%;
-    height: 100%;
-    object-fit: cover;
-    transition: all 300ms;
+   
+  }
+    
+.subcontacto{
+    color: seashell;
+    font-size: 20px;
+    padding: 10px 20px
+    
+
+}
+.icono6{
+    list-style-image: url(../imagenes/email.png);  
+    
+  }
+
+  .icono7{
+    list-style-image: url(../imagenes/telefono-sonando.png);
+  }
+
+
+
+
+
+  /* MOBILE */
+
+  @media 
+      (max-width: 768px) {
+
+
+        header .open,
+        header .close{
+            display: block;
+            position: absolute;
+            left: 20px;
+            right: 20px;
+            top: 30px;
+            width: 20%;
+        }
+
+        header .close {
+            left: 30rem;
+            
+        }
+
+        .menu-principal:target{
+            display: block;
+        }
+        
+        header nav{
+    
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100vh;
+            background: rgba(185, 183, 183, 0.7);
+            z-index: 1;
+            padding:0;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+        }
+
+        header nav {
+
+            font-size: 1.2rem;
+        }
+
+        
+        #nav:target {
+          left: 0;
+          
+          }
+
+          header nav ul{
+              flex-direction: column;
+          }
+
+          header nav ul li{
+            margin: 5px 0;
+        }
+
+        header h1{
+            margin bottom: 80px;
+        }
+        header h1 a{
+            font-size: 4rem;
+        }
+        
+        header nav ul li a{
+            font size: 4rem;
+        }
+
+
+        header {
+            text-transform: inherit;
+            padding: 5px;
+        }
+
+        /* INDEX*/
+
+        section .titulo2 {
+            font-size: 1rem;
+            border-right: none;
+            width: 100%;
+            margin: 0.5rem;
+            padding: 0.5rem;
+            text-align: center;
+            border right: none;
+          }
+          
+          section .titulom{
+              text-align: center;
+              padding-right: 100px;
+          }
+        section .parrafoindex {
+            width: auto;
+            font-size: 0.8rem;
+            line-height: 1.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            margin-left: 5rem;
+            padding: 0;
+          }
+
+
+
+          .area {
+            
+              flex-direction:column
+          }
+
+          .city {
+            font-size: 15px;
+            text-align: left;
+          }
+ 
+          .ciudad {
+              margin:none;
+              padding: none;
+              font size: 0.1rem;
+          }
+
+      
+       section .alimento{
+           padding: 1rem;
+           margin-top: 20px;
+           margin-bottom: 20px;
+           letter-spacing: none;
+           font-size: 1rem;
+           width: 75%;
+       }
+
+
+    .alimento3 {
+        font-size: 0.9rem;
+        padding: 0.2rem;
+        margin: 80px;
+        margin-right: 20px;
+        text-align: center;
+        width: 60%;
+      }
+      
+
+
+      /* MOTORHOME*/
+
+    .titulomotor {
+        font-size: 2.4rem;
+    }
+
+
+    .parrafomotor {
+        width: 38%;
+    }
+
+    .alimento2{
+        letter-spacing: 5px;
+        line-height: 2rem;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 40px;
+
+    }
+
+    .galeriatitulo {
+        width: 20px;
+        margin:10px;
+        padding:5px;
+
+    }
+
+
+
+    / *CONTACTO */
+
+
+    section .titulocontacto{
+        text-align: center;
+    }
+
+        .contacto h1::after {
+            margin: auto;
+            width: 360px;
+  
 }
 
-.box:hover  {
-    flex: 50%;
-}
+    
+  
 
-.box:hover > img {
-    width: 100%;
-    height: 100%; 
-}
+
+
